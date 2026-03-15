@@ -31,8 +31,9 @@ class Array
             else
                 data = NULL;
         }
-        Array(const Array &copy) : length(copy.length)
+        Array(const Array &copy)
         {
+			length = copy.length;
             if (length > 0)
             {
                 data = new T[length];
